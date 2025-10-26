@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syrniki Rezept</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Recipe by Lana</h1>
+
+<h2>Syrniki</h2>
+
+<h3>Zutaten</h3>
+<ul class="herz-liste">
+<li>250 g Quark</li>
+<li>1 Ei</li>
+<li>2 EL Zucker</li>
+<li>50 g Mehl + etwas extra zum Formen</li>
+<li>1 Prise Salz</li>
+<li>Öl zum Braten</li>
+</ul>
+
+<h3>Anleitung</h3>
+<ol class="center-list">
+<li>Quark, Ei, Zucker, Salz und Mehl in einer Schüssel vermengen.</li>
+<li>Teig zu kleinen runden Küchlein formen und in Mehl wenden.</li>
+<li>Öl in einer Pfanne erhitzen.</li>
+<li>Syrniki von beiden Seiten goldbraun braten.</li>
+<li>Heiß servieren, z.B. mit Marmelade oder Honig.</li>
+</ol>
+
+<h3>Tipps</h3>
+<ul class="herz-liste">
+<li>Für extra fluffige Syrniki Quark gut abtropfen lassen.</li>
+<li>Pfanne nicht zu heiß, sonst verbrennen sie außen und sind innen roh.</li>
+<li>Mit Puderzucker bestreuen für eine schöne Optik.</li>
+</ul>
+
+<h3>Bilder von Syrniki</h3>
+<div class="slideshow-container">
+<div class="slide fade">
+<img src="syrniki.webp" alt="Syrniki Bild 1">
+</div>
+<div class="slide fade">
+<img src="OIP (1).webp" alt="Syrniki Bild 2">
+</div>
+<div class="slide fade">
+<img src="OIP (2).webp" alt="Syrniki Bild 3">
+</div>
+<div class="slide fade">
+<img src="OIP.webp" alt="Syrniki Bild 4">
+</div>
+<div class="slide fade">
+<img src="OIP (3).webp" alt="Syrniki Bild 5">
+</div>
+</div>
+
+<h3 class="link">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo" class="insta-icon">
+<a href="https://www.instagram.com/Lana._moric/" target="_blank">@Lana._moric</a>
+</h3>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+let slides = document.getElementsByClassName("slide");
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3000); // wechselt alle 3 Sekunden
+}
+</script>
+</body>
+</html>
+
